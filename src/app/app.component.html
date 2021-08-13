@@ -18,9 +18,11 @@
     </button>
     <h3>Your Other Cards:</h3>
     <div class="main-mini-cards-wrapper">
-      <!-- {cards.slice(4).map(({ suit, rank }) => (
-        <MiniCard key={v4()} suit={suit} rank={rank} />
-      ))} -->
+      <app-minicard
+        *ngFor="let card of cards.slice(4)"
+        [rank]="card.rank"
+        [suit]="card.suit"
+      ></app-minicard>
     </div>
   </div>
 </div>
