@@ -12,6 +12,11 @@ export class AppComponent implements OnInit {
 
   constructor(private cardService: CardService){}
 
+  shuffleCards(): void {
+    console.log('hit shuffleCards');
+    this.cards = this.cardService.generateCards();
+  }
+
   ngOnInit(): void {
     this.cards = this.cardService.generateCards();
   }

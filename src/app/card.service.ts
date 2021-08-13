@@ -3,6 +3,10 @@ import { v4 } from 'uuid';
 import { generateRandomInt } from 'src/utils/generateRandonInt';
 import { Card, Suit } from './card';
 import { CardClass } from './cardclass';
+// import spades from '../assets/spades.svg';
+// import clubs from '../assets/clubs.svg';
+// import diamonds from '../assets/diamonds.svg';
+// import heart from '../assets/heart.svg';
 
 @Injectable({
   providedIn: 'root',
@@ -50,5 +54,20 @@ export class CardService {
     }
 
     return cards;
+  }
+
+  getSuitStr(suit: Suit): string {
+    switch (suit) {
+      case Suit.S:
+        return '../assets/spades.svg'
+      case Suit.C:
+        return '../assets/clubs.svg';
+      case Suit.D:
+        return '../assets/diamonds.svg'
+      case Suit.H:
+        return '../assets/heart.svg';
+      default:
+        throw new Error('Invalid suit entered.');
+    }
   }
 }

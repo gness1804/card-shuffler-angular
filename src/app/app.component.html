@@ -1,3 +1,26 @@
 <div class="App">
   <app-header></app-header>
+  <div class="main">
+    <h2 class="main-h2">Your Cards:</h2>
+    <div class="main-cards-wrapper">
+      <app-card
+        *ngFor="let card of cards.slice(0, 4)"
+        [rank]="card.rank"
+        [suit]="card.suit"
+      ></app-card>
+    </div>
+    <button
+      class="main-reshuffle-button"
+      (click)="shuffleCards()"
+      title="Reshuffle your cards"
+    >
+      Reshuffle
+    </button>
+    <h3>Your Other Cards:</h3>
+    <div class="main-mini-cards-wrapper">
+      <!-- {cards.slice(4).map(({ suit, rank }) => (
+        <MiniCard key={v4()} suit={suit} rank={rank} />
+      ))} -->
+    </div>
+  </div>
 </div>
