@@ -5,6 +5,7 @@
     <div class="main-cards-wrapper">
       <app-card
         *ngFor="let card of cards.slice(0, 4)"
+        class="card"
         [rank]="card.rank"
         [suit]="card.suit"
       ></app-card>
