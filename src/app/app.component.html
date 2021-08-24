@@ -21,6 +21,7 @@
     <div class="main-mini-cards-wrapper">
       <app-minicard
         *ngFor="let card of cards.slice(4)"
+        class="mini-card"
         [rank]="card.rank"
         [suit]="card.suit"
       ></app-minicard>
