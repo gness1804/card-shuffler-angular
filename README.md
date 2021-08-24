@@ -1,4 +1,23 @@
-# CardShufflerAngular
+# Card Shuffler Angular
+
+> Shuffles a virtual deck of cards.
+
+<br />
+
+## Install
+
+```
+git clone https://github.com/gness1804/card-shuffler-angular.git
+cd card-shuffler-angular
+yarn install
+```
+
+<br />
+
+## Using the app:
+After navigating to the app running the browser, you will see four cards in the top part of the app and 44 other cards further down. There is a "Reshuffle" button between these sets of cards. The app automatically generates and sorts a virtual deck of 52 cards with the standard ranks (Ace through King) and suits (Diamonds, Hearts, Spades, Clubs). The first four of these cards appears on the top part of the app and the remaining 48 lower down in miniature form. Pressing the "Reshuffle" button will reshuffle the entire deck.
+
+<br />
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
 
