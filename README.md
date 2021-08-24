@@ -1,5 +1,7 @@
 # Card Shuffler Angular
 
+![Main screenshot](https://github.com/gness1804/card-shuffler-angular/blob/master/src/assets/main-ss.png)
+
 > Shuffles a virtual deck of cards.
 
 <br />
